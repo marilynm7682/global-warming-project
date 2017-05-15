@@ -44,9 +44,66 @@
     
     p {
         font-family: 'Alice', serif;
+        text-align: center;
+        font-size: 15px;
     }
     
-    .jumbotron {}
+    li {
+        font-family: 'Alice', serif;
+        text-align: center;
+        font-size: 15px;
+    }
+    
+    .jumbotron {
+        color: ;
+        background-color: black;
+    }
+    
+    @media(min-width:768px) {
+        h2 {
+            font-size: 14px;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+    
+    blockquote {
+        font-size: 20px;
+    }
+    h3{
+        font-size:18px;
+    }
+    
+    @media(min-width:992px) {
+        h2 {
+            font-size: 10px;
+        }
+        p {
+            font-size: 11px;
+        }
+        blockquote {
+            font-size: 15px;
+        }
+        h3{
+            font-size:14px;
+        }
+    }
+    
+    @media(min-width:1200px) {
+        h2 {
+            font-size: 10px;
+        }
+        p {
+            font-size: 11px;
+        }
+        blockquote {
+            font-size: 15px;
+        }
+        h3{
+            font-size:14px;
+        }
+    }
 </style>
 
 <body>
@@ -58,15 +115,15 @@
             </div>
             <div class="collapse navbar-collapse navbar-menubuilder">
                 <ul class="nav navbar-nav navbar-left">
-                    <li><a href="home">Home</a>
+                    <li><a class="page-scroll" href="home">Home</a>
                     </li>
-                    <li><a href="#info">Info</a>
+                    <li><a class="page-scroll" href="#info">Info</a>
                     </li>
-                    <li><a href="#gallery">Gallery</a>
+                    <li><a class="page-scroll" href="#gallery">Gallery</a>
                     </li>
-                    <li><a href="#famous">Famous Qoutes</a>
+                    <li><a class="page-scroll" href="#famous">Famous Qoutes</a>
                     </li>
-                    <li><a href="#MoreInfo">More Info</a></li>
+                    <li><a class="page-scroll" href="#MoreInfo">More Info</a></li>
                 </ul>
             </div>
         </div>
@@ -81,85 +138,147 @@
                 </div>
             </div>
             <div class="jumbotron">
-                <h1 class="display-1">Earth at risk
+                <h1 class="display-1 color:white">Earth at risk
                 </h1>
-                <p>Imagine yourself 10 years from now... <br>You hear all over the news that the climate is rising to a VERY extreme temperature <br> You hear things like <br>The glaciers are starting to melt <br>The heat is becoming more and more intense<br>The
-                    sea levels are rising<br>Many forest diseases are starting to spread to the north.<br> Could this possibly be true?<br>Over the past years the climate around the world has dramatically changed and there’s nothing we can do about it.
-                    Or is there?
+                <p style="color:white">Imagine yourself 10 years from now... <br>You hear all over the news that the climate is rising to a VERY extreme temperature <br> You hear things like <br>"The glaciers are starting to melt"<br>"The heat is becoming more and more intense"<br>"The
+                    sea levels are rising"<br>"Many forest diseases are starting to spread to the north."<br> <br> Could this possibly be true?<br>Over the past years the climate around the world has dramatically changed and there’s nothing we can do
+                    about it. Or is there?
                     <p>
             </div>
         </div>
         <div id="info">
-            <h1>Info: So what exactly is global warming?</h1>
-            <p>Global warming is the stage in which the temperature of the earth is rapidly increasing and the atmosphere's layers that protect us from the sun’s radiation is becoming thinner and thinner each time.The planet is warming up each year due to
-                carbon dioxide.</p><br>
-            <h1>Effects of Global Warming:</h1>
-            <h2>Melting of Glaciers:</h2>
-            <p>
-                <li>Because of global warming, the sea levels will rise due to the melting of the glaciers. Soon many animals such as polar bears, seals and penguins living on earth will be at risk. </li>
-            </p>
-            <p>
-                <li>With glaciers melting at a rapid speed soon there won’t be any way to reverse the damage that is being caused. It will put in risk ecosystems.</li>
-            </p> <br>
-            <h1>Climate Increase:</h1>
-            <p>
-                <li>Increase of precipitation will occur on the coast</li>
-            </p>
-            <p>
-                <li>More evaporation which will cause more rain in some parts of the world</li>
-            </p>
-            <p>
-                <li>Animals and plants will have trouble adapting to the new climate since there will be an increase in rain.</li>
-            </p>
-            <p>
-                <li>Many animals and plants will not survive </li>
-            </p>
-            <p>
-                <li>Animals will try to migrate</li>
-            </p> <br>
-            <h1>Diseases:</h1>
-            <p>
-                <li>As temperature increases it can affect the health of humans</li>
-            </p>
-            <p>
-                <li>Water born diseases are likely to spread like malaria</li>
-            </p><br>
-            <h1>Rise of sea levels:</h1>
-            <p>
-                <li>The melting of glaciers are causing the sea levels in the artic to rise</li>
-            </p>
-            <p>
-                <li>Cities near the U.S east coast are starting to have a flood damage</li>
-            </p>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <h1>Info: So what exactly is global warming?</h1>
+                    <p>Global warming is the stage in which the temperature of the earth is rapidly increasing and the atmosphere's layers that protect us from the sun’s radiation is becoming thinner and thinner each time.The planet is warming up each year
+                        due to carbon dioxide.</p><br>
+                    <div id="picture9">
+                        <center><img src="img/picture9.png" class="img-thumbnail" alt="picture"></center>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <h1>Effects of Global Warming:</h1>
+                    <h2>Melting of Glaciers:</h2>
+                    <p>
+                        <li>Because of global warming, the sea levels will rise due to the melting of the glaciers. Soon many animals such as polar bears, seals and penguins living on earth will be at risk. </li>
+                    </p>
+                    <p>
+                        <li>With glaciers melting at a rapid speed soon there won’t be any way to reverse the damage that is being caused. It will put in risk ecosystems.</li>
+                    </p> <br>
+                    <div id="picture3">
+                        <center><img src="img/picture3.png" class="img-thumbnail" alt="picture"></center>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <h1>Climate Increase:</h1>
+                    <p>
+                        <li>Increase of precipitation will occur on the coast</li>
+                    </p>
+                    <p>
+                        <li>More evaporation which will cause more rain in some parts of the world</li>
+                    </p>
+                    <p>
+                        <li>Animals and plants will have trouble adapting to the new climate since there will be an increase in rain.</li>
+                    </p>
+                    <p>
+                        <li>Many animals and plants will not survive </li>
+                    </p>
+                    <p>
+                        <li>Animals will try to migrate</li>
+                    </p> <br>
+                    <div id="picture4">
+                        <center><img src="img/picture4.png" class="img-thumbnail" alt="picture"></center>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <h1>Diseases:</h1>
+                    <p>
+                        <li>As temperature increases it can affect the health of humans</li>
+                    </p>
+                    <p>
+                        <li>Water born diseases are likely to spread like malaria</li>
+                    </p><br>
+                    <h1>Rise of sea levels:</h1>
+                    <p>
+                        <li>The melting of glaciers are causing the sea levels in the artic to rise</li>
+                    </p>
+                    <p>
+                        <li>Cities near the U.S east coast are starting to have a flood damage</li>
+                    </p>
+                    <div id="picture6">
+                        <center><img src="img/picture6.png" class="img-thumbnail" alt="picture"></center>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="gallery"></div>
-        <div id="famous">
-            <h1>Famous people talk about Global Warming:</h1><br>
-            <blockquote>
-                <p>“Climate change is real, it is happening right now. It is the most urgent threat facing our entire species, and we need to work collectively together and stop procrastinating”</p>
-                <footer>Leonardo DiCaprio</footer>
-            </blockquote><br>
+        <div id="gallery">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="img/picture5.png" alt="Intro picture">
+                    </div>
+                    <div class="item">
+                        <img src="img/picture7.png" alt="gallery picture">
+                    </div>
+                    <div class="item">
+                        <img src="img/picture8.png" alt="gallery picture">
+                    </div>
+                </div>
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="famous">
+        <h1>Famous people talk about Global Warming:</h1><br>
+        <blockquote>
+            <p>“Climate change is real, it is happening right now. It is the most urgent threat facing our entire species, and we need to work collectively together and stop procrastinating”</p>
+            <footer>Leonardo DiCaprio</footer>
+        </blockquote><br>
 
-            <blockquote>
-                <p>“And no challenge poses a greater threat to future generations than climate change”</p>
-                <footer>President Barack Obama</footer>
-            </blockquote><br>
-        </div>
-        <div id="MoreInfo"></div>
-        <h1>What YOU can do:</h1> <br>
-        <p><li>Buy LED light bulbs which uses up to 80 percent less energy than conventional incandescents</li></p>
-        <p><li>Drive Gas-smart cars</li></p>
-        <p><li>Cover your pots while cooking</li></p>
-        <p><li>Take a shower instead of a bath</li></p>
-        <p><li>Clean, reuse, recycle </li></p>
-        <p><li>Plant a tree</li></p>
-        <p><li>Switch to green power</li></p>
-        
-        <h1>Sites:</h1> 
-        <h2>More websites to learn more information</h2>
-        <h3><a href="https://climate.nasa.gov/evidence/">Nasa-Global Climate Change</a></h3>
-        <h3><a href="http://www.nationalgeographic.com/environment/global-warming/global-warming-overview/">National Geographic-Global Warming</a></h3>
-        <h2>You can MAKE a difference, be the HERO not the VILLAIN!</h2>
+        <blockquote>
+            <p>“And no challenge poses a greater threat to future generations than climate change”</p>
+            <footer>President Barack Obama</footer>
+        </blockquote><br>
+    </div>
+    <div id="MoreInfo"></div>
+    <h1>What YOU can do:</h1> <br>
+    <p>
+        <li>Buy LED light bulbs which uses up to 80 percent less energy than conventional incandescents</li>
+    </p>
+    <p>
+        <li>Drive Gas-smart cars</li>
+    </p>
+    <p>
+        <li>Cover your pots while cooking</li>
+    </p>
+    <p>
+        <li>Take a shower instead of a bath</li>
+    </p>
+    <p>
+        <li>Clean, reuse, recycle </li>
+    </p>
+    <p>
+        <li>Plant a tree</li>
+    </p>
+    <p>
+        <li>Switch to green power</li>
+    </p>
+
+    <h1>Sites:</h1>
+    <h2>More websites to learn more information</h2>
+    <h3><a href="https://climate.nasa.gov/evidence/">Nasa-Global Climate Change</a></h3>
+    <h3><a href="http://www.nationalgeographic.com/environment/global-warming/global-warming-overview/">National Geographic-Global Warming</a></h3>
+    <h2>You can MAKE a difference, be the HERO not the VILLAIN!</h2>
     </div>
 </body>
 
